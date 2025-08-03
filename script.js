@@ -13,7 +13,7 @@ function updateCounter() {
   } else if (count < 0) {
     counterElement.style.color = "#e74c3c";
   } else {
-    counterElement.style.color = "#2c3e50";
+    counterElement.style.color = "#ffffffff";
   }
 }
 
