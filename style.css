@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.counter-container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.counter-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.counter-display {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.counter-btn {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.btn-increase {
+  background-color: #27ae60;
+}
+
+.btn-decrease {
+  background-color: #e74c3c;
+}
+
+.btn-reset {
+  background-color: #3498db;
+}
+
+.counter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.counter-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .counter-container {
+    padding: 30px 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
